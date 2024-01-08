@@ -44,34 +44,34 @@ body {
 #svamp {
   width: 100%;
   height: 100%;
-  background-image: url(../img/carljohan_r.svg);
+  background-image: url(../img/svamp_r.svg);
   background-size: cover;
 }
 #svamp2 {
   width: 100%;
   height: 100%;
-  background-image: url(../img/carljohan_g.svg);
+  background-image: url(../img/svamp_g.svg);
   background-size: cover;
 }
 
 #svamp3 {
   width: 100%;
   height: 100%;
-  background-image: url(../img/carljohan_b.svg);
+  background-image: url(../img/svamp_b.svg);
   background-size: cover;
 }
 
-#fluesvamp_container {
+#badsvamp_container {
   position: absolute;
   width: 18%;
   aspect-ratio: 7/8;
   transform-origin: center 95%;
 }
 
-#fluesvamp_sprite {
+#badsvamp {
   width: 100%;
   height: 100%;
-  background-image: url(../img/fluesvamp_2.svg);
+  background-image: url(../img/badsvamp.svg);
   background-size: cover;
 }
 

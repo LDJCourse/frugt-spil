@@ -6,13 +6,13 @@ let liv;
 const svamp = document.querySelector("#svamp_container");
 const svamp2 = document.querySelector("#svamp_container2");
 const svamp3 = document.querySelector("#svamp_container3");
-const fluesvamp = document.querySelector("#fluesvamp_container");
+const fluesvamp = document.querySelector("#badsvamp_container");
 
 const sprite1 = document.querySelector("#svamp");
 const sprite2 = document.querySelector("#svamp2");
 const sprite3 = document.querySelector("#svamp3");
 
-const fluesvamp1 = document.querySelector("#fluesvamp_sprite");
+const fluesvamp1 = document.querySelector("#badsvamp");
 
 function showTitle() {
   hideAllScreens();
@@ -99,7 +99,7 @@ function clickFlueSvamp() {
 
   fluesvamp.classList.add("frys");
 
-  document.querySelector("#fluesvamp_sprite").classList.add("forsvind");
+  document.querySelector("#badsvamp").classList.add("forsvind");
 
   fluesvamp.addEventListener("animationend", resetFlueSvamp);
 }
@@ -120,20 +120,20 @@ function resetsvamp() {
 }
 
 function resetFlueSvamp() {
-  document.querySelector("#fluesvamp_container").classList = "";
-  document.querySelector("#fluesvamp_sprite").classList = "";
+  document.querySelector("#badsvamp_container").classList = "";
+  document.querySelector("#badsvamp").classList = "";
 
   let rnd = generateRandomNumber(5);
-  document.querySelector("#fluesvamp_container").classList.add("pos" + rnd);
+  document.querySelector("#badsvamp_container").classList.add("pos" + rnd);
   rnd = generateRandomNumber(2);
-  document.querySelector("#fluesvamp_container").classList.add("speed" + rnd);
+  document.querySelector("#badsvamp_container").classList.add("speed" + rnd);
   rnd = generateRandomNumber(4);
 
-  document.querySelector("#fluesvamp_container").offsetHeight;
-  document.querySelector("#fluesvamp_container").classList.add("fald");
+  document.querySelector("#badsvamp_container").offsetHeight;
+  document.querySelector("#badsvamp_container").classList.add("fald");
 
   document
-    .querySelector("#fluesvamp_container")
+    .querySelector("#badsvamp_container")
     .addEventListener("mousedown", clickFlueSvamp);
 }
 
@@ -155,7 +155,7 @@ function endGame() {
   svamp.classList = "";
   document.querySelector("#svamp").classList = "";
   fluesvamp.classList = "";
-  document.querySelector("#fluesvamp_sprite").classList = "";
+  document.querySelector("#badsvamp").classList = "";
 }
 
 function gameOver() {
