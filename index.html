@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spil</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/spil.css" />
+    <link rel="stylesheet" href="css/animationer.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div id="screen">
+        <div id="game">
+          <div id="game_elements">
+            <div id="svamp_container">
+              <div class="hide" id="svamp"></div>
+            </div>
+            <div id="svamp_container2">
+              <div class="hide" id="svamp2"></div>
+            </div>
+            <div id="svamp_container3">
+              <div class="hide" id="svamp3"></div>
+            </div>
+            <div id="fluesvamp_container">
+              <div class="hide" id="fluesvamp_sprite"></div>
+            </div>
+            <div id="fluesvamp_container2">
+              <div id="fluesvamp_sprite2"></div>
+            </div>
+          </div>
+
+          <div id="game_ui_container" class="">
+            <div class="hide">
+              <h1 id="game_ui_point" class="hide">
+                Points: <span id="mine_points"></span>
+              </h1>
+              <h1 id="game_ui_liv" class="hide">
+                Liv: <span id="mine_liv"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div id="start">
+          <h1>Slå din rekord</h1>
+          <h1>Prøv at samle så mange point som muligt</h1>
+
+          <button id="play">start</button>
+        </div>
+        <div id="game_over">
+          <h1>Du har tabt</h1>
+          <button id="play_again_1">Prøv igen</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/svampescript.js"></script>
+  </body>
+</html>

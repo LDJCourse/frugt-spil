@@ -1,0 +1,82 @@
+.hop {
+  animation: hop 4s infinite;
+}
+
+@keyframes hop {
+  0% {
+    scale: 0 0;
+  }
+  50% {
+    scale: 1 1;
+  }
+  100% {
+    scale: 0 0;
+  }
+}
+
+.fald {
+  animation: fald infinite linear;
+}
+
+@keyframes fald {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 450%;
+  }
+}
+
+.forsvind {
+  animation: forsvind 2s 1 both;
+}
+
+@keyframes forsvind {
+  from {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 1;
+  }
+  to {
+    opacity: 0;
+    rotate: 720deg;
+    scale: 0;
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.hide {
+  display: none;
+}
+
+.gray {
+  filter: grayscale();
+}
+
+.speed1 {
+  animation-duration: 1s;
+}
+.speed2 {
+  animation-duration: 2s;
+}
+.speed3 {
+  animation-duration: 3s;
+}
+.delay1 {
+  animation-delay: 0.2s;
+}
+.delay2 {
+  animation-delay: 0.6s;
+}
+.delay3 {
+  animation-delay: 0.9s;
+}
+.delay4 {
+  animation-delay: 1.2s;
+}
+
+@media (max-width: 786px) {
+}

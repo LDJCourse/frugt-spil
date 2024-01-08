@@ -1,0 +1,208 @@
+body {
+  background-image: url("../img/forrestbg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  aspect-ratio: 16/9;
+  background-image: url(../img/forrestbg.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#game_elements {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#svamp_container,
+#svamp_container2,
+#svamp_container3 {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 5/7;
+  transform-origin: center 95%;
+}
+
+#svamp {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_r.svg);
+  background-size: cover;
+}
+#svamp2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_g.svg);
+  background-size: cover;
+}
+
+#svamp3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_b.svg);
+  background-size: cover;
+}
+
+#fluesvamp_container {
+  position: absolute;
+  width: 18%;
+  aspect-ratio: 7/8;
+  transform-origin: center 95%;
+}
+
+#fluesvamp_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fluesvamp_2.svg);
+  background-size: cover;
+}
+
+.pos1 {
+  top: -50%;
+  left: 2%;
+}
+.pos2 {
+  top: -50%;
+  left: 20%;
+}
+.pos3 {
+  top: -50%;
+  left: 35%;
+}
+.pos4 {
+  top: -50%;
+  left: 35%;
+}
+.pos5 {
+  top: -50%;
+  left: 54%;
+}
+.pos6 {
+  top: -50%;
+  left: 49%;
+}
+.pos7 {
+  top: -50%;
+  left: 65%;
+}
+.pos8 {
+  top: -50%;
+  left: 78%;
+}
+.pos9 {
+  top: -50%;
+  left: 70%;
+}
+.pos10 {
+  top: -50%;
+  left: 82%;
+}
+
+#game_ui_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#game_ui_container div {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  border-radius: 30%;
+  /* padding: 45px; */
+}
+#mine_points {
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: yellow;
+}
+#mine_liv {
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: yellow;
+}
+
+#start {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+}
+
+#start h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+#play {
+  all: unset;
+  background-color: rgb(88, 88, 207);
+  border-radius: 50px;
+  font-size: 34px;
+  position: absolute;
+  padding: 40px 120px;
+  background-size: cover;
+  top: 55%;
+  left: 35%;
+  right: auto;
+  cursor: pointer;
+}
+
+#game_over {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/forrestbg.png);
+  background-size: cover;
+  background-color: black;
+}
+
+#game_over h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+#play_again_1 {
+  all: unset;
+  background-color: rgb(88, 88, 207);
+  border-radius: 50px;
+  font-size: 34px;
+  position: absolute;
+  padding: 40px 120px;
+  background-size: cover;
+  top: 55%;
+  left: 35%;
+  right: auto;
+  cursor: pointer;
+}
